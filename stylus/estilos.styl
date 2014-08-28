@@ -1,0 +1,352 @@
+@import 'nib/vendor'
+vendor-prefixes = o ms moz webkit
+border-radius()
+    -webkit-border-radius arguments
+    -moz-border-radius arguments
+    ms-border-radius arguments
+    o-border-radius arguments
+    border-radius arguments
+appearance()
+    -webkit-appearance arguments
+    -moz-appearance arguments
+    ms-appearance arguments
+    o-appearance arguments
+    appearance arguments
+box-shadow()
+    -webkit-box-shadow arguments
+    -moz-box-shadow arguments
+    ms-box-shadow arguments
+    o-box-shadow arguments
+    box-shadow arguments
+transform()
+    -webkit-transform arguments
+    -moz-transform arguments
+    ms-transform arguments
+    o-transform arguments
+    transform arguments
+*
+    margin 0
+
+body
+    background url(../img/bg-01.jpg) no-repeat
+    background-position top left
+    background-attachment fixed
+    color #333
+    font-family Open Sans Condensed
+    font-size 13px
+    margin 0px 0px
+
+.pagina
+    width 1000px
+    height auto
+    margin 0px auto
+    padding 0px 0px
+
+.izquierda
+    float left
+    width 285px
+    height 550px
+    -webkit-box-shadow 0 0px 15px 0px #333
+    -moz-box-shadow 0 0px 15px 0px #333
+    box-shadow 0 0px 15px 0px #333
+    padding 0px 0px 0px 0px
+    border-radius 0px 0px 20px 20px
+    -webkit-border-radius 0px 0px 20px 20px
+    -moz-border-radius 0px 0px 20px 20px
+    position fixed
+    background #FFFFFF
+
+.derecha
+    float right
+    width 710px
+    margin 0px 0px 0px 0px
+
+.nuestros
+    font-size 42px
+    text-align center
+    text-shadow .04em .04em 0 #FFF,.08em .08em 0 #AAA
+    -webkit-text-shadow .04em .04em 0 #fff, .08em .08em 0 #aaa
+    -moz-text-shadow .04em .04em 0 #fff, .08em .08em 0 #aaa
+    margin -5px 0px 0px 0px
+    letter-spacing 5px
+    color #1D3D88
+    background url(../img/titulo-bg.jpg) 0px 0px no-repeat
+    -webkit-border-radius 0px 0px 10px 10px
+    -moz-border-radius 0px 0px 10px 10px
+    border-radius 0px 0px 10px 10px
+    width 380px
+    margin 0px auto
+    padding 0px 0px 5px 0px
+
+.redes
+    margin 20px auto
+    width 225px
+    img
+        padding 0px 10px 0px 0px
+    .sociallink
+        background url(../img/social_links.png) no-repeat
+        width 103px
+        height 29px
+        margin 7px 120px 3px 0px
+
+.foto21
+    background url(../img/equipo21.jpg) no-repeat
+    width 280px
+    height 200px
+    margin 15px 0px 0px 0px
+
+.iconos
+    margin 115px 0px 0px 15px
+    padding 0px 0px 0px 0px
+    li
+        margin 0px 0px 0px 0px
+        list-style-type none
+        font-size 20px
+    a
+        color #20317F
+        line-height 2
+        font-size 20px
+        &:hover
+            color #000000
+a
+    color #fff
+    text-decoration none
+
+.view
+    width 170px
+    height 170px
+    border 10px solid #FAFAFA
+    overflow hidden
+    position relative
+    text-align center
+    cursor default
+    z-index 9
+    border-radius 5px 5px 5px 5px
+    -webkit-radius 5px 5px 5px 5px
+    -moz-radius 5px 5px 5px 5px
+    background-color #FFF
+    display inline-block
+    border-radius 140px
+    margin 10px
+    box-shadow 0px 10px 0px 0px #333
+    img
+        margin 0px auto
+    h2
+        text-transform uppercase
+        color #fff
+        text-align center
+        position relative
+        padding 10px
+        background rgba(194, 33, 33, 0.8)
+        margin 0px 0 0 0
+    p
+        font-family Georgia, serif
+        font-style italic
+        font-size 12px
+        position relative
+        color #fff
+        padding 0px 0px 0px 0px
+        text-align center
+    a
+        &.info
+            display inline-block
+            text-decoration none
+            padding 0px 5px
+            background #000
+            color #fff
+            text-transform uppercase
+            -webkit-box-shadow 0 0 1px #000
+            -moz-box-shadow 0 0 1px #000
+            box-shadow 0 0 1px #000
+            &:
+                hover
+                    -webkit-box-shadow 0 0 5px #000
+                    -moz-box-shadow 0 0 5px #000
+                    box-shadow 0 0 5px #000
+
+.view .mask,.view .content
+    width 170px
+    height 170px
+    position absolute
+    overflow hidden
+    top 0
+    left 0
+    z-index 9
+    border-radius 0px 0px 0px 0px
+    -webkit-radius 0px 0px 0px 0px
+    -moz-radius 0px 0px 0px 0px
+
+.view-eighth
+    .mask
+        background-color rgba(255, 255, 255, 0.7)
+        top -200px
+        opacity 0
+        -webkit-transition all 0.3s ease-out 0.5s
+        -moz-transition all 0.3s ease-out 0.5s
+        -o-transition all 0.3s ease-out 0.5s
+        -ms-transition all 0.3s ease-out 0.5s
+        transition all 0.3s ease-out 0.5s
+        z-index 9
+    h2
+        -webkit-transform translateY(-200px)
+        -moz-transform translateY(-200px)
+        -o-transform translateY(-200px)
+        -ms-transform translateY(-200px)
+        transform translateY(-200px)
+        -webkit-transition all 0.2s ease-in-out 0.1s
+        -moz-transition all 0.2s ease-in-out 0.1s
+        -o-transition all 0.2s ease-in-out 0.1s
+        -ms-transition all 0.2s ease-in-out 0.1s
+        transition all 0.2s ease-in-out 0.1s
+    p
+        color #333
+        -webkit-transform translateY(-200px)
+        -moz-transform translateY(-200px)
+        -o-transform translateY(-200px)
+        -ms-transform translateY(-200px)
+        transform translateY(-200px)
+        -webkit-transition all 0.2s ease-in-out 0.2s
+        -moz-transition all 0.2s ease-in-out 0.2s
+        -o-transition all 0.2s ease-in-out 0.2s
+        -ms-transition all 0.2s ease-in-out 0.2s
+        transition all 0.2s ease-in-out 0.2s
+    a
+        &.info
+            -webkit-transform translateY(-200px)
+            -moz-transform translateY(-200px)
+            -o-transform translateY(-200px)
+            -ms-transform translateY(-200px)
+            transform translateY(-200px)
+            -webkit-transition all 0.2s ease-in-out 0.3s
+            -moz-transition all 0.2s ease-in-out 0.3s
+            -o-transition all 0.2s ease-in-out 0.3s
+            -ms-transition all 0.2s ease-in-out 0.3s
+            transition all 0.2s ease-in-out 0.3s
+    &:hover
+        .mask
+            opacity 1
+            top 0px
+            -webkit-transition-delay 0s
+            -moz-transition-delay 0s
+            -o-transition-delay 0s
+            -ms-transition-delay 0s
+            transition-delay 0s
+            -webkit-animation bounceY 0.9s linear
+            -moz-animation bounceY 0.9s linear
+            -ms-animation bounceY 0.9s linear
+            animation bounceY 0.9s linear
+        h2
+            -webkit-transform translateY(0px)
+            -moz-transform translateY(0px)
+            -o-transform translateY(0px)
+            -ms-transform translateY(0px)
+            transform translateY(0px)
+            -webkit-transition-delay 0.4s
+            -moz-transition-delay 0.4s
+            -o-transition-delay 0.4s
+            -ms-transition-delay 0.4s
+            transition-delay 0.4s
+        p
+            -webkit-transform translateY(0px)
+            -moz-transform translateY(0px)
+            -o-transform translateY(0px)
+            -ms-transform translateY(0px)
+            transform translateY(0px)
+            -webkit-transition-delay 0.2s
+            -moz-transition-delay 0.2s
+            -o-transition-delay 0.2s
+            -ms-transition-delay 0.2s
+            transition-delay 0.2s
+        a
+            &.info
+                -webkit-transform translateY(0px)
+                -moz-transform translateY(0px)
+                -o-transform translateY(0px)
+                -ms-transform translateY(0px)
+                transform translateY(0px)
+                -webkit-transition-delay 0s
+                -moz-transition-delay 0s
+                -o-transition-delay 0s
+                -ms-transition-delay 0s
+                transition-delay 0s
+
+.iconope
+    position absolute
+    display block
+    margin 0px 0px 0px 175px
+    width 100px
+    height 100px
+    article
+        transition all 0.8s ease-in
+        &:hover
+            transform rotate(360deg)
+
+.logotext
+    position absolute
+    display block
+    margin 30px 0px 0px 10px
+    width 163px
+    height 38px
+
+.bgstretcher-area
+    text-align left
+
+.bgstretcher, .bgstretcher UL, .bgstretcher UL LI
+    position absolute
+    top 0
+    left 0
+
+.bgstretcher UL, .bgstretcher UL LI
+    margin 0
+    padding 0
+    list-style none
+
+.bgstretcher
+    background black
+    overflow hidden
+    width 100%
+    position fixed
+    z-index 1
+    _position absolute
+    top 0
+    left 0
+
+@keyframes bounceY
+    0%
+        transform: translateY(-205px)
+    40%
+        transform: translateY(-100px)
+    65%
+        transform: translateY(-52px)
+    82%
+        transform: translateY(-25px)
+    92%
+        transform: translateY(-12px)
+    55%, 75%, 87%, 97%, 100%
+        transform: translateY(0px)
+@-moz-keyframes bounceY
+    0%
+        -moz-transform: translateY(-205px)
+    40%
+        -moz-transform: translateY(-100px)
+    65%
+        -moz-transform: translateY(-52px)
+    82%
+        -moz-transform: translateY(-25px)
+    92%
+        -moz-transform: translateY(-12px)
+    55%, 75%, 87%, 97%, 100%
+        -moz-transform: translateY(0px)
+@-webkit-keyframes bounceY
+    0%
+        -webkit-transform: translateY(-205px)
+    40%
+        -webkit-transform: translateY(-100px)
+    65%
+        -webkit-transform: translateY(-52px)
+    82%
+        -webkit-transform: translateY(-25px)
+    92%
+        -webkit-transform: translateY(-12px)
+    55%, 75%, 87%, 97%, 100%
+        -webkit-transform: translateY(0px)
