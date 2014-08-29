@@ -8,8 +8,34 @@ module.exports = function (grunt) {
                     linenos: false
                 },
                 files: [{
-                    'css/estilos.css': ['stylus/*.styl']
+                    'css/estilos.css': 'stylus/*.styl',
                 }]
+            }
+        },
+		// Compresor de .js
+	    uglify: {
+			options: {
+				mangle: false,
+				compress: {
+					drop_console: true
+				}
+			},
+			js: {
+				files: {
+					'js/main.min.js': 'javascript/*.js',
+				}
+			}
+	    },
+	    // Compilar Jade
+		jade: {
+            compile: {
+                options: {
+                    client: false,
+                    pretty: true
+                },
+                files: {
+					'index.html': 'jade/index.jade',
+				}
             }
         },
         //Observar cambios
@@ -27,28 +53,20 @@ module.exports = function (grunt) {
 			scripts: {
                 files: ['javascript/*.js'],
                 tasks: ['uglify']
-            }
-		},
-		// Compresor de .js
-	    uglify: {
-			options: {
-				mangle: false,
-				compress: {
-					drop_console: true
-				}
-			},
-			js: {
-				files: {
-					'js/main.min.js': 'javascript/*.js',
-				}
+            },
+            //observar el jade
+			jade: {
+				files: ["jade/*.jade"],
+				tasks: ["jade"]
 			}
-	    }
+		},
 	});
 
 	//Cargo las tareas
 	grunt.loadNpmTasks('grunt-contrib-stylus');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	// Run Default task(s).
-	grunt.registerTask('default', ['stylus','uglify','watch']);
+	grunt.registerTask('default', ['stylus','uglify','jade','watch']);
 };
