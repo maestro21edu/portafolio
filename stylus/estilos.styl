@@ -32,7 +32,7 @@ body
     background-position top left
     background-attachment fixed
     color #333
-    font-family Open Sans Condensed
+    font-family Open Sans
     font-size 13px
     margin 0px 0px
 
@@ -46,13 +46,9 @@ body
     float left
     width 285px
     height 550px
-    -webkit-box-shadow 0 0px 15px 0px #333
-    -moz-box-shadow 0 0px 15px 0px #333
     box-shadow 0 0px 15px 0px #333
     padding 0px 0px 0px 0px
     border-radius 0px 0px 20px 20px
-    -webkit-border-radius 0px 0px 20px 20px
-    -moz-border-radius 0px 0px 20px 20px
     position fixed
     background #FFFFFF
 
@@ -60,24 +56,18 @@ body
     float right
     width 710px
     margin 0px 0px 0px 0px
-
-.nuestros
-    font-size 42px
     text-align center
-    text-shadow .04em .04em 0 #FFF,.08em .08em 0 #AAA
-    -webkit-text-shadow .04em .04em 0 #fff, .08em .08em 0 #aaa
-    -moz-text-shadow .04em .04em 0 #fff, .08em .08em 0 #aaa
-    margin -5px 0px 0px 0px
-    letter-spacing 5px
-    color #1D3D88
-    background url(../img/titulo-bg.jpg) 0px 0px no-repeat
-    -webkit-border-radius 0px 0px 10px 10px
-    -moz-border-radius 0px 0px 10px 10px
-    border-radius 0px 0px 10px 10px
-    width 380px
-    margin 0px auto
-    padding 0px 0px 5px 0px
-
+.nuestros
+    color: #5A5A5A
+    font-size: 25px
+    letter-spacing: 1px
+    text-align: center
+    box-shadow: 0 1px 5px #353535
+    background-color: #FFF
+    border-radius: 0px 0px 10px 10px
+    position: fixed
+    width: 50%
+    z-index: 20
 .redes
     margin 20px auto
     width 225px
@@ -85,29 +75,29 @@ body
         padding 0px 10px 0px 0px
     .sociallink
         background url(../img/social_links.png) no-repeat
-        width 103px
-        height 29px
-        margin 7px 120px 3px 0px
-
+        text-align: center
+        padding: 30px 0px 0px 0px
 .foto21
     background url(../img/equipo21.jpg) no-repeat
     width 280px
     height 200px
-    margin 15px 0px 0px 0px
-
+    margin 5px auto
 .iconos
-    margin 115px 0px 0px 15px
+    margin 90px 0px 0px 10px
     padding 0px 0px 0px 0px
     li
         margin 0px 0px 0px 0px
         list-style-type none
-        font-size 20px
+        font-size 18px
     a
         color #20317F
-        line-height 2
-        font-size 20px
+        line-height 20px
+        font-size 18px
         &:hover
             color #000000
+    .info
+        list-style-type circle
+        line-height 15px
 a
     color #fff
     text-decoration none
@@ -122,13 +112,11 @@ a
     cursor default
     z-index 9
     border-radius 5px 5px 5px 5px
-    -webkit-radius 5px 5px 5px 5px
-    -moz-radius 5px 5px 5px 5px
     background-color #FFF
     display inline-block
     border-radius 140px
     margin 10px
-    box-shadow 0px 10px 0px 0px #333
+    box-shadow 0 5px 5px 2px #333
     img
         margin 0px auto
     h2
@@ -155,14 +143,9 @@ a
             background #000
             color #fff
             text-transform uppercase
-            -webkit-box-shadow 0 0 1px #000
-            -moz-box-shadow 0 0 1px #000
             box-shadow 0 0 1px #000
-            &:
-                hover
-                    -webkit-box-shadow 0 0 5px #000
-                    -moz-box-shadow 0 0 5px #000
-                    box-shadow 0 0 5px #000
+            &:hover
+                box-shadow 0 0 5px #000
 
 .view .mask,.view .content
     width 170px
@@ -181,113 +164,53 @@ a
         background-color rgba(255, 255, 255, 0.7)
         top -200px
         opacity 0
-        -webkit-transition all 0.3s ease-out 0.5s
-        -moz-transition all 0.3s ease-out 0.5s
-        -o-transition all 0.3s ease-out 0.5s
-        -ms-transition all 0.3s ease-out 0.5s
         transition all 0.3s ease-out 0.5s
         z-index 9
     h2
-        -webkit-transform translateY(-200px)
-        -moz-transform translateY(-200px)
-        -o-transform translateY(-200px)
-        -ms-transform translateY(-200px)
         transform translateY(-200px)
-        -webkit-transition all 0.2s ease-in-out 0.1s
-        -moz-transition all 0.2s ease-in-out 0.1s
-        -o-transition all 0.2s ease-in-out 0.1s
-        -ms-transition all 0.2s ease-in-out 0.1s
         transition all 0.2s ease-in-out 0.1s
     p
         color #333
-        -webkit-transform translateY(-200px)
-        -moz-transform translateY(-200px)
-        -o-transform translateY(-200px)
-        -ms-transform translateY(-200px)
         transform translateY(-200px)
-        -webkit-transition all 0.2s ease-in-out 0.2s
-        -moz-transition all 0.2s ease-in-out 0.2s
-        -o-transition all 0.2s ease-in-out 0.2s
-        -ms-transition all 0.2s ease-in-out 0.2s
         transition all 0.2s ease-in-out 0.2s
     a
         &.info
-            -webkit-transform translateY(-200px)
-            -moz-transform translateY(-200px)
-            -o-transform translateY(-200px)
-            -ms-transform translateY(-200px)
             transform translateY(-200px)
-            -webkit-transition all 0.2s ease-in-out 0.3s
-            -moz-transition all 0.2s ease-in-out 0.3s
-            -o-transition all 0.2s ease-in-out 0.3s
-            -ms-transition all 0.2s ease-in-out 0.3s
             transition all 0.2s ease-in-out 0.3s
     &:hover
         .mask
             opacity 1
             top 0px
-            -webkit-transition-delay 0s
-            -moz-transition-delay 0s
-            -o-transition-delay 0s
-            -ms-transition-delay 0s
             transition-delay 0s
-            -webkit-animation bounceY 0.9s linear
-            -moz-animation bounceY 0.9s linear
-            -ms-animation bounceY 0.9s linear
             animation bounceY 0.9s linear
         h2
-            -webkit-transform translateY(0px)
-            -moz-transform translateY(0px)
-            -o-transform translateY(0px)
-            -ms-transform translateY(0px)
             transform translateY(0px)
-            -webkit-transition-delay 0.4s
-            -moz-transition-delay 0.4s
-            -o-transition-delay 0.4s
-            -ms-transition-delay 0.4s
             transition-delay 0.4s
         p
-            -webkit-transform translateY(0px)
-            -moz-transform translateY(0px)
-            -o-transform translateY(0px)
-            -ms-transform translateY(0px)
             transform translateY(0px)
-            -webkit-transition-delay 0.2s
-            -moz-transition-delay 0.2s
-            -o-transition-delay 0.2s
-            -ms-transition-delay 0.2s
             transition-delay 0.2s
         a
             &.info
-                -webkit-transform translateY(0px)
-                -moz-transform translateY(0px)
-                -o-transform translateY(0px)
-                -ms-transform translateY(0px)
                 transform translateY(0px)
-                -webkit-transition-delay 0s
-                -moz-transition-delay 0s
-                -o-transition-delay 0s
-                -ms-transition-delay 0s
                 transition-delay 0s
 
 .iconope
     position absolute
     display block
     margin 0px 0px 0px 175px
-    width 100px
-    height 100px
+    width 80px
     article
         transition all 0.8s ease-in
         &:hover
             transform rotate(360deg)
-
 .logotext
     position absolute
     display block
-    margin 30px 0px 0px 10px
-    width 163px
-    height 38px
-
+    margin 20px 0 0 10px
+    width 160px
+.iconope, .logotext
+    img
+        width 100%
 .bgstretcher-area
     text-align left
 
